@@ -1717,7 +1717,7 @@ export function fromTranslationScale(out, t, s) {
  */
 
 /**
- * Create a MVP matrix from center, eye with perspective projection
+ * Create a VP matrix from center, eye with perspective projection
  * @param {mat4} out mat4 receiving operation result
  * @param {number} fov Vertical field of view in radians
  * @param {number} near Near bound of the frustum
@@ -1728,7 +1728,7 @@ export function fromTranslationScale(out, t, s) {
  * @param {?MVPView} view Visible bound in the screen
  * @returns {mat4} out
  */
-export function mvpFromTargetEyeView(out, fov, near, far, size, target, eye, view) {
+export function vpFromTargetEyeView(out, fov, near, far, size, target, eye, view) {
   // https://github.com/mrdoob/three.js/blob/dev/src/cameras/PerspectiveCamera.js#L171
   // https://github.com/mrdoob/three.js/blob/dev/src/math/Matrix4.js#L817
   const aspect = size[0] / size[1];
