@@ -19,3 +19,7 @@ For documentation, news, tutorials, and more visit the [glMatrix Homepage](http:
 Contributing
 ----------------------
 Contributions are welcome! Please provide unit tests for new functionality. (See TESTING.md for details)
+
+### Release
+
+`npm version patch && git push --follow-tags && npm run pub`
