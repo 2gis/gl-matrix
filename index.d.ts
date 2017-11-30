@@ -2675,7 +2675,7 @@ declare module '@2gis/gl-matrix/mat4' {
     }
 
     /**
-     * Create a MVP matrix from center, eye with perspective projection
+     * Create a VP matrix from center, eye with perspective projection
      * @param {mat4} out mat4 receiving operation result
      * @param {number} fov Vertical field of view in radians
      * @param {number} near Near bound of the frustum
@@ -2684,17 +2684,19 @@ declare module '@2gis/gl-matrix/mat4' {
      * @param {vec3} target Point the viewer is looking at
      * @param {vec3} eye Position of the viewer
      * @param {?MVPView} view Visible bound in the screen
+     * @returns {mat4} out
      */
-    export function mvpFromTargetEyeView(out: Mat4, fov: number, near: number, far: number, size: Vec2, target: Vec3,
-        eye: Vec3, view: MVPView)
+    export function vpFromTargetEyeView(out: Mat4, fov: number, near: number, far: number, size: Vec2, target: Vec3,
+        eye: Vec3, view: MVPView): Mat4
 
     /**
      * Create a matrix from a vector translation and vector scale
      * @param {mat4} out mat4 receiving operation result
      * @param {vec3} t Translation
      * @param {vec3} s Scale
+     * @returns {mat4} out
      */
-    export function fromTranslationScale(out: Mat4, t: Vec3, s: Vec3)
+    export function fromTranslationScale(out: Mat4, t: Vec3, s: Vec3): Mat4
 }
 
 declare module '@2gis/gl-matrix/quat' {
