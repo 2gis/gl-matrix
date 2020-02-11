@@ -22,4 +22,4 @@ Contributions are welcome! Please provide unit tests for new functionality. (See
 
 ### Release
 
-`npm version patch && git push --follow-tags && npm run pub`
+`npm run build && npm version patch && git push --follow-tags && npm run pub`
