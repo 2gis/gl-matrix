@@ -11,10 +11,10 @@ type TypedArray
 type Vec2 = [number, number] | number[] | TypedArray;
 type Vec3 = [number, number, number] | number[] | TypedArray;
 type Vec4 = [number, number, number, number] | number[] | TypedArray;
-type Mat2 = TypedArray;
-type Mat2d = TypedArray;
-type Mat3 = TypedArray;
-type Mat4 = TypedArray;
+type Mat2 = number[] | TypedArray;
+type Mat2d = number[] | TypedArray;
+type Mat3 = number[] | TypedArray;
+type Mat4 = number[] | TypedArray;
 type Quat = [number, number, number] | number[] | TypedArray;
 
 declare module '@2gis/gl-matrix/vec2' {
