@@ -1719,7 +1719,7 @@ export function fromTranslationScale(out, t, s) {
 /**
  * Create a VP matrix from center, eye with perspective projection
  * @param {mat4} out mat4 receiving operation result
- * @param {number} fov Vertical field of view in radians
+ * @param {number} fov Vertical field of view in degrees
  * @param {number} near Near bound of the frustum
  * @param {number} far Far bound of the frustum
  * @param {vec2} size Width and height of viewport
