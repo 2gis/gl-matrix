@@ -2583,6 +2583,17 @@ declare module '@2gis/gl-matrix/mat4' {
     export function lookAt(out: Mat4, eye: Vec3, center: Vec3, up: Vec3): Mat4;
 
     /**
+     * Generates a matrix that makes something look at something else.
+     *
+     * @param {mat4} out mat4 frustum matrix will be written into
+     * @param {vec3} eye Position of the viewer
+     * @param {vec3} center Point the viewer is looking at
+     * @param {vec3} up vec3 pointing up
+     * @returns {mat4} out
+     */
+    export function targetTo(out: Mat4, eye: Vec3, center: Vec3, up: Vec3): Mat4;
+
+    /**
      * Returns a string representation of a mat4
      *
      * @param mat matrix to represent as a string
